@@ -1,0 +1,64 @@
+.title{
+    font-family: /*"Pacifico"*/Arial, sans-serif;
+    text-align: center;
+    position: relative;
+}
+
+.center{
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+}
+
+.comment-image{
+    width: 40%;
+}
+
+.background_img{
+    max-width: 100%;
+}
+
+.end_img{
+    max-width: 40%;
+    align-self: center;  
+}
+
+
+#Logo {
+    max-width: 100px;
+    max-height: 100px;
+    align-self: center;
+    text-align: center;
+}
+
+.row{
+    text-align: center;
+    justify-content: center;
+}
+
+.order_description{
+    min-height: 300px;
+    justify-content: space-evenly;
+    padding: 3px;
+    border: 3px solid;
+    border-radius: 3px;
+    margin: 5px;
+    border-color: black;
+    
+}
+
+.option_description{
+    min-height: 200px;
+    min-width: 400px;
+    justify-content: space-around;
+    padding: 3px;
+    border: 3px solid;
+    border-radius: 3px;
+    margin: 5px;
+    border-color: black;
+    
+}
+.text-justify {
+    text-align: justify;
+}

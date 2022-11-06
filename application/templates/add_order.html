@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="text-center">
+        <h1>НОВЫЙ ЗАКАЗ</h1>
+        <form class="w-100 btn mt-3 mb-3 btn-lg btn-dark" style="display: flex; flex-direction: column" method="post" enctype="multipart/form-data">
+            <div class="form input_line">
+            {% csrf_token %}
+            {{ add_order.as_p }}  
+            <button class="btn" style="background-color: white; color: black;" type="submit"> ЗАКАЗАТЬ </button>
+            </div>
+        </form>    
+    </div> 
+{% endblock %} 
+

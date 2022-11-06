@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div>
+        {% if comment %}
+            <h1>{{ comment.title }}</h1>
+            <h2>{{ comment.subtitle }}</h2>
+            <h3>{{ comment.content }}</h3>
+            {% if comment.image %}
+                <img class="comment_image" src="{{ comment.image.url }}" />
+            {% endif %}
+            <p>
+                автор {{ comment.author.name }}
+            </p>
+        {% else %}
+            <h3>
+                Отзыв не найден 
+            </h3>        
+        {% endif %}
+    </div> 
+{% endblock %} 

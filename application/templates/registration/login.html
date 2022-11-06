@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="text-center">
+    <main class="form-signin w-100 m-auto">
+        
+ {% if form.errors %}
+ 
+    <h2  class="h3 mb-3 fw-normal">
+        Неверное имя пользователя или пароль<br>Повторите ввод
+    </h2>
+ {% endif %}
+
+ {% if next %}
+   {% if user.is_authenticated %}
+    <h2 class="h3 mb-3 mt-3 fw-normal">
+        Пользователь не имеет доступа на эту страницу. 
+    </h2>
+  {% else %}
+    <h2 class="h3 mb-3 mt-3 fw-normal">
+        Войдите в свою учетную запись для просмотра страницы
+    </h2>
+  {% endif %} 
+ {% endif %} 
+
+<form class="w-100 btn mt-3 mb-3 btn-lg btn-dark" style="display: flex; flex-direction: column" method="post" action="{% url 'login' %}">
+    {% csrf_token %}
+    
+    <div class="w-100 btn mt-5 mb-3 btn-sm btn-dark" style="max-width: 550px; min-height: min-content; align-self:center;">
+        {{ form.username.label_tag }}
+        {{ form.username }}
+    </div>
+    <div class="w-100 btn mt-5 mb-3 btn-sm btn-dark" style="max-width: 550px; min-height: min-content; align-self:center">
+        {{ form.password.label_tag }}
+        {{ form.password }}
+    <input type="submit" class="w-100 btn mt-5 mb-3 btn-sm" style="background-color: white; color:black;" value="ВОЙТИ"/>
+    <input type="hidden" name='next' value="{{ next }}"/>
+    </div>
+    
+ </form>
+</main> 
+</div>
+{% endblock %}
+   
+    
+       

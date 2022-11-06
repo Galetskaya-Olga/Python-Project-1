@@ -1,0 +1,205 @@
+/*@import url('application/css/fonts/Pacifico-Regular.ttf');*/
+
+body {
+    font-family: "Arial", sans-serif;
+}
+
+.title{
+    font-family: "Pacifico", sans-serif;
+}
+  
+
+.main-structure {
+    width: 100%;
+    margin: 0 auto;
+    background-color: black;
+    color: whitesmoke;
+    display: flex;
+}
+
+.center-structure {
+    width: 100%;
+    margin: 0 auto;
+    min-height: 500px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.center{
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+}
+
+.between{
+    justify-content: space-between;
+}
+
+.comment-image{
+    width: 50%;
+}
+
+.background_img{
+    max-width: 100%;
+}
+
+.end_img{
+    max-width: 300px;
+    display: flex; 
+    align-self: center;  
+}
+
+.form{
+    box-sizing: border-box;
+    max-width: 500px;
+    margin: 0 auto;
+    color: black;
+    position: relative;
+    font-style: bold;
+    border-width: 2px;
+    border-radius: 3px;
+    border-color: black;
+
+}
+
+.item{
+    margin: 0;
+    padding: 1rem;
+}
+
+.line{
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding: 3px 3px 3px 3px;
+}
+
+#Logo {
+    max-width: 100%;
+    max-height: 100%;
+    align-self: center;
+    text-align: center;
+}
+
+.button{
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background: white; /* цвет фона кнопки*/ 
+    font-size: 15pt; /* Размер шрифта в пунктах */
+    border-radius: 5px;
+}
+
+.input_line{
+    min-width: 200px;
+    margin: 1rem;
+    padding: 1rem;
+    background: rgb(186, 81, 60); /* цвет фона поля ввода*/ 
+    font-size: 20pt; /* Размер шрифта в пунктах */
+    border-radius: 5px;
+}
+ 
+.row{ 
+display: inline-flex;
+}
+
+nav {
+    width: 100%;
+    margin: 0 auto;
+    align-self: center;
+}
+
+nav::before {
+    content: '';
+    display: block;
+    width: 70%;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 100px;
+}
+
+ul li {
+    float: left;  /* элементы меню плавающие, чтобы они расположились по горизонтали*/ 
+    display: inline;
+    padding: 5px;
+}
+
+ul li a {
+    display: inline-block;
+    align-self: center;
+    color:orangered;
+    height: 50px;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 100px;  /* положение строк */
+    
+
+}
+
+.block-menu {
+    height: 100px;
+    width: 20%;
+    padding: 3px;
+    margin: 3px;
+    display: inline-block;
+}  
+
+.block-menu-right {
+    height: 100px;
+    width: 30%;
+    font-size: 18px;
+    padding: 3px;
+    margin: 3px;
+    display: inline-block;
+    text-align: center;
+}  
+
+.block-menu-right > p{
+    padding: 3px;
+    margin: 3px;
+    display:inline-block;
+    text-align: center;    
+}  
+
+.block {
+    height: 150px;
+    width: 20%;
+    border: 3px;
+    padding: 3px;
+    margin: 3px;
+    display: inline-block;
+}
+
+.block-right {
+    height: 150px;
+    width: 60%;
+    border: 3px;
+    padding: 3px;
+    margin: 3px;
+    display: inline-block;
+    text-align: justify;
+  }
+  
+a { 
+    text-decoration: none;/* Отменяем подчеркивание у ссылки */
+    color: orangered;
+    font-weight: bold; 
+   }
+   
+div a:visited ,ul li a :visited, div p a :visited{
+    color: red; /* Цвет посещенной ссылки */
+   }
+   
+div a:hover,  ul li a :hover, div p a:hover{
+    color: brown;
+}
+   

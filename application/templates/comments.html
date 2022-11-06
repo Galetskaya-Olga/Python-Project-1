@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% for comment in comments %}
+        <div class="order_description">
+            <a href="{% url 'comment' comment.id %}">
+                <h1>{{ comment.title }}</h1>
+            </a>
+            <h2>{{ comment.subtitle }}</h2>
+            <h3>{{ comment.content }}</h3>
+            {% if comment.image %}
+                <img class="comment_image" src="{{ comment.image.url }}" />
+            {% endif %}    
+        </div>
+    {% endfor %}
+{% endblock %}    
